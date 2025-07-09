@@ -8,6 +8,7 @@ export default function ContactForm() {
   const { t } = useI18n();
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [sentSuccessfully, setSentSuccessfully] = useState(false);
   const [error, setError] = useState(null);
   
   const {
@@ -49,8 +50,12 @@ export default function ContactForm() {
       const result = await response.json();
       
       if (response.ok) {
-        setSubmitted(true);
-        resetForm();
+        setSentSuccessfully(true);
+        // Mostrar "Gracias" por 2 segundos antes de mostrar el mensaje de éxito
+        setTimeout(() => {
+          setSubmitted(true);
+          resetForm();
+        }, 2000);
       } else {
         setError(result.error || t('contact.error'));
       }
@@ -69,7 +74,10 @@ export default function ContactForm() {
       {submitted ? (
         <SuccessMessage 
           message={t('contact.success')}
-          onDismiss={() => setSubmitted(false)}
+          onDismiss={() => {
+            setSubmitted(false);
+            setSentSuccessfully(false);
+          }}
           actionText={t('contact.send')}
         />
       ) : (
@@ -116,7 +124,9 @@ export default function ContactForm() {
             isSubmitting={submitting}
             isFormValid={isFormValid}
             hasTouchedFields={hasTouchedFields}
+            sentSuccessfully={sentSuccessfully}
             submittingText={t('contact.sending')}
+            thanksText={t('contact.thanks')}
           >
             {t('contact.send')}
           </SubmitButton>

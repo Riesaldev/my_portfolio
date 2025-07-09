@@ -65,10 +65,19 @@ export function SubmitButton({
   isSubmitting, 
   isFormValid, 
   hasTouchedFields, 
+  sentSuccessfully = false,
   children = 'Enviar',
-  submittingText = 'Enviando...'
+  submittingText = 'Enviando...',
+  thanksText = '¡¡¡Gracias!!!'
 }) {
-  const isDisabled = isSubmitting || !isFormValid;
+  const isDisabled = isSubmitting || !isFormValid || sentSuccessfully;
+  
+  // Determinar el texto del botón según el estado
+  const getButtonText = () => {
+    if (isSubmitting) return submittingText;
+    if (sentSuccessfully) return thanksText;
+    return children;
+  };
   
   return (
     <div>
@@ -77,11 +86,13 @@ export function SubmitButton({
         className={`w-full px-6 py-3 text-4xl rounded-lg transition-all duration-200 font-semibold shadow-md ${
           isDisabled
             ? 'bg-fuchsia-700 cursor-not-allowed text-gray-200 shadow-none' 
+            : sentSuccessfully
+            ? 'bg-green-500 hover:bg-green-600 hover:shadow-xl hover:shadow-green-400 active:transform active:scale-95'
             : 'bg-fuchsia-500 hover:bg-fuchsia-600 hover:shadow-xl hover:shadow-fuchsia-400 active:transform active:scale-95'
         } text-white`}
         disabled={isDisabled}
       >
-        {isSubmitting ? submittingText : children}
+        {getButtonText()}
       </button>
       
       {!isFormValid && hasTouchedFields && (

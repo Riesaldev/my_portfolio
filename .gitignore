@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# roadmap and private docs
+/docs/MEJORAS_ROADMAP.md
+/docs/SECURITY.md
