@@ -166,9 +166,12 @@ const PortalContent = ({ currentPortal, onPortalClick }) => {
               <div className="Portal flex flex-col items-center justify-center">
                 {/* Texto clicable para pantallas menores a xl */}
                 <Link href={portalRoutes.main} className="xl:pointer-events-none">
-                  <div className="text-[#b000b9] flex flex-col pl-8 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-black text-center cursor-pointer xl:cursor-default hover:text-[#d946ef] xl:hover:text-[#b000b9] transition-colors duration-200">
-                    {t('portals.main.portalText')}<br />
-                    <span className='font-normal text-xs sm:text-sm md:text-base lg:text-lg'>{t('portals.main.portalSubtext')}</span>
+                  <div 
+                    className="text-[#b000b9] flex flex-col pl-8 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-black text-center cursor-pointer xl:cursor-default hover:text-[#d946ef] xl:hover:text-[#b000b9] transition-colors duration-200"
+                    dangerouslySetInnerHTML={{ 
+                      __html: `${t('portals.main.portalText')}<br/><span class='font-normal text-xs sm:text-sm md:text-base lg:text-lg'>${t('portals.main.portalSubtext')}</span>` 
+                    }}
+                  >
                   </div>
                 </Link>
                 {/* Área clicable del portal principal - solo para pantallas xl y mayores */}
@@ -208,9 +211,12 @@ const PortalContent = ({ currentPortal, onPortalClick }) => {
               <div className="Portal flex flex-col items-center justify-center">
                 {/* Texto clicable para pantallas menores a xl */}
                 <Link href={portalRoutes.Right} className="xl:pointer-events-none">
-                  <div className="text-[#b000b9] flex flex-col pr-85 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-black text-center mb-4 sm:mb-6 md:mb-8 lg:mb-12 cursor-pointer xl:cursor-default hover:text-[#d946ef] xl:hover:text-[#b000b9] transition-colors duration-200">
-                    {t('portals.right.portalText')}<br />
-                    <span className='font-normal text-xs sm:text-sm md:text-base lg:text-lg'>{t('portals.right.portalSubtext')}</span>
+                  <div 
+                    className="text-[#b000b9] flex flex-col pr-85 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-black text-center mb-4 sm:mb-6 md:mb-8 lg:mb-12 cursor-pointer xl:cursor-default hover:text-[#d946ef] xl:hover:text-[#b000b9] transition-colors duration-200"
+                    dangerouslySetInnerHTML={{ 
+                      __html: `${t('portals.right.portalText')}<br/><span class='font-normal text-xs sm:text-sm md:text-base lg:text-lg'>${t('portals.right.portalSubtext')}</span>` 
+                    }}
+                  >
                   </div>
                 </Link>
                 {/* Área clicable del portal derecho - solo para pantallas xl y mayores */}
@@ -250,9 +256,12 @@ const PortalContent = ({ currentPortal, onPortalClick }) => {
               <div className="Portal flex flex-col items-center justify-center">
                 {/* Texto clicable para pantallas menores a xl */}
                 <Link href={portalRoutes.Left} className="xl:pointer-events-none">
-                  <div className="text-[#b000b9] flex flex-col pl-85 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-black text-center mb-2 sm:mb-3 md:mb-4 lg:mb-4 cursor-pointer xl:cursor-default hover:text-[#d946ef] xl:hover:text-[#b000b9] transition-colors duration-200">
-                    {t('portals.left.portalText')}<br />
-                    <span className='font-normal text-xs sm:text-sm md:text-base lg:text-lg'>{t('portals.left.portalSubtext')}</span>
+                  <div 
+                    className="text-[#b000b9] flex flex-col pl-85 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-black text-center mb-2 sm:mb-3 md:mb-4 lg:mb-4 cursor-pointer xl:cursor-default hover:text-[#d946ef] xl:hover:text-[#b000b9] transition-colors duration-200"
+                    dangerouslySetInnerHTML={{ 
+                      __html: `${t('portals.left.portalText')}<br/><span class='font-normal text-xs sm:text-sm md:text-base lg:text-lg'>${t('portals.left.portalSubtext')}</span>` 
+                    }}
+                  >
                   </div>
                 </Link>
                 {/* Área clicable del portal izquierdo - solo para pantallas xl y mayores */}
@@ -290,8 +299,10 @@ const PortalContent = ({ currentPortal, onPortalClick }) => {
         showParticles={true}
       >
         <div className="space-y-4">
-          <p className="text-fuchsia-50/90 leading-relaxed whitespace-pre-line text-sm sm:text-base">
-            {cardContent.content}
+          <p 
+            className="text-fuchsia-50/90 leading-relaxed whitespace-pre-line text-sm sm:text-base"
+            dangerouslySetInnerHTML={{ __html: cardContent.content.replace(/\n/g, '<br/>') }}
+          >
           </p>
           
           <div className="mt-6 text-center">

@@ -20,7 +20,7 @@
     "name": "Nombre",
     "email": "Email",
     "message": "Mensaje",
-    "send": "Enviar",
+    "send": "¡¡¡Gracias!!!",
     "sending": "Enviando...",
     "success": "Mensaje enviado correctamente",
     "error": "Error al enviar el mensaje",
@@ -89,8 +89,8 @@
     },
     "right": {
       "title": "Portal del Bosque de las Hadas",
-      "description": "Seguimos las indicaciones de La Dama del Lago y cruzamos el portal hacia el Bosque Encantado de las Hadas con la esperanza de encontrar la Espada y así cumplir con nuestra misión. ¿Encontraremos la Espada del Destino en el Bosque Encantado?<br/>¿Querran ayudarnos la Hadas a encontrarla? ",
-      "subtitle": "(contacto)",
+      "description": "Seguimos las indicaciones de La Dama del Lago y cruzamos el portal hacia el Bosque Encantado de las Hadas con la esperanza de encontrar la Espada y así cumplir con nuestra misión. ¿Encontraremos la Espada del Destino en el Bosque Encantado?",
+      "subtitle": "¿Querran ayudarnos la Hadas a encontrarla?",
       "portalText": "Portal al Bosque de las Hadas",
       "portalSubtext": "(Contacto)",
       "href": "/contact"
@@ -98,7 +98,7 @@
     "left": {
       "title": "Portal al Laboratorio",
       "description": "Investiguemos en el laboratorio alguna pista sobre la ubicacion de La Espada del Destino. En el laboratorio del Mago, rodeados de frascos, pociones y objetos mágicos, descubrimos un pergamino antiguo que nos habla de la Espada del Destino y su conexión con La Dama del Lago.",
-      "subtitle": "(sobre mí)",
+      "subtitle": "¿La pista de la Espada del Destino estara demasiado fría de aquí?",
       "portalText": "Portal al Laboratorio",
       "portalSubtext": "(Sobre mí)",
       "href": "/about"
@@ -137,7 +137,7 @@
     "farewell": {
       "thanks": {
         "title": "Agradecimientos",
-        "content": "Quiero expresar mi más sincero agradecimiento a todas las personas que me han apoyado en este viaje.<br/><Gracias a mi familia por su amor incondicional y su paciencia. Por sacrificar su tiempo y recursos para ayudarme a alcanzar mis metas.<br/> A mis amigos, por estar siempre ahí y por sus palabras de aliento.<br/> Y a todos los mentores y profesores que compartieron su conocimiento y experiencia conmigo.<br/> De corazón, gracias a todos por ser parte de mi historia y por ayudarme a convertir mis sueños en realidad.<br/> ¡Espero que disfruten de mi trabajo!"
+        "content": "Quiero expresar mi más sincero agradecimiento a todas las personas que me han apoyado en este viaje.<br/>Gracias a mi familia por su amor incondicional y su paciencia. Por sacrificar su tiempo y recursos para ayudarme a alcanzar mis metas.<br/> A mis amigos, por estar siempre ahí y por sus palabras de aliento.<br/> Y a todos los mentores y profesores que compartieron su conocimiento y experiencia conmigo.<br/> De corazón, gracias a todos por ser parte de mi historia y por ayudarme a convertir mis sueños en realidad.<br/> ¡Espero que disfruten de mi trabajo!"
       }
     },
     "contact": {

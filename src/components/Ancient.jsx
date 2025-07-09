@@ -126,9 +126,6 @@ export default function AncientScroll ( {
           >
             <div
               className="text-black text-justify px-7"
-              role="button"
-              tabIndex="0"
-              onKeyDown={( e ) => e.key === 'Enter' && toggleScroll()}
             >
               <div className={`text-left ${ theNautigal.className } text-4xl leading-10 m-3`}>
                 {/* Renderizar contenido HTML */}
@@ -186,10 +183,10 @@ export default function AncientScroll ( {
 
         {/* Flechas de navegación */}
         {scrollContents.length > 1 && (
-          <div className="flex justify-between w-full absolute top-1/2 -translate-y-1/2 ">
+          <div className="flex justify-between w-full absolute top-1/2 -translate-y-1/2 z-10 pointer-events-none">
             <button
               onClick={() => onChangePage( 'prev' )}
-              className="bg-amber-800/60 hover:bg-amber-700/80 cursor-pointer relative -left-20 hover:scale-125 p-3 rounded-full transition-all"
+              className="bg-amber-800/60 hover:bg-amber-700/80 cursor-pointer relative -left-20 hover:scale-125 p-3 rounded-full transition-all pointer-events-auto"
               aria-label="Pergamino anterior"
             >
               <div className="w-12 h-12 relative transform rotate-180">
@@ -203,7 +200,7 @@ export default function AncientScroll ( {
             </button>
             <button
               onClick={() => onChangePage( 'next' )}
-              className="bg-amber-800/60 hover:bg-amber-700/80 cursor-pointer relative left-20 hover:scale-125 p-3 rounded-full transition-all"
+              className="bg-amber-800/60 hover:bg-amber-700/80 cursor-pointer relative left-20 hover:scale-125 p-3 rounded-full transition-all pointer-events-auto"
               aria-label="Siguiente pergamino"
             >
               <div className="w-12 h-12 relative">
