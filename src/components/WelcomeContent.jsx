@@ -1,4 +1,5 @@
 import { useI18n } from './I18nProvider';
+import SafeHTML from './SafeHTML';
 
 /**
  * Componente para mostrar el contenido de bienvenida de la página principal
@@ -23,8 +24,12 @@ export default function WelcomeContent() {
         {t('welcome.enjoy')}
       </p>
       
-      <p className="mt-4 text-lg" dangerouslySetInnerHTML={{ __html: String(t('welcome.portal') || '') }}>
-      </p>
+      <SafeHTML
+        content={String(t('welcome.portal') || '')}
+        type="basic"
+        className="mt-4 text-lg"
+        tag="p"
+      />
     </div>
   );
 }

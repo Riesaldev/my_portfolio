@@ -4,6 +4,7 @@ import { Fleur_De_Leah } from 'next/font/google';
 import { The_Nautigal } from 'next/font/google';
 import Image from 'next/image';
 import { useI18n } from './I18nProvider';
+import SafeHTML from './SafeHTML';
 
 const fleurDeLeah = Fleur_De_Leah( {
   weight: '400',
@@ -128,8 +129,12 @@ export default function AncientScroll ( {
               className="text-black text-justify px-7"
             >
               <div className={`text-left ${ theNautigal.className } text-4xl leading-10 m-3`}>
-                {/* Renderizar contenido HTML */}
-                <div dangerouslySetInnerHTML={{ __html: String(content || '').replace( '<ContactForm />', '' ) }} />
+                {/* Renderizar contenido HTML de forma segura */}
+                <SafeHTML 
+                  content={String(content || '').replace('<ContactForm />', '')}
+                  type="full"
+                  className=""
+                />
 
                 {/* Mostrar video si existe */}
                 {videoSrc && (
