@@ -1,0 +1,251 @@
+/* 🌄 Estilos generales */
+#preload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #32154d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* 🌅 Fondo animado */
+#background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* 🐉 Sección del dragón */
+.dragon-section {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  opacity: 0;
+  animation: fadeInDragon 1s ease-out 0.5s forwards;
+  z-index: 1;
+}
+
+.dragon-iframe {
+  width: min(90vw, 800px);
+  height: min(50vh, 500px);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 
+    0.2em 0.2em 2em rgba(196, 0, 245, 0.533),
+    0 0 20px rgba(255, 255, 255, 0.1);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+@keyframes fadeInDragon {
+  0% { 
+    opacity: 0; 
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% { 
+    opacity: 1; 
+    transform: translate(-50%, -60%) scale(1);
+  }
+}
+
+/* 🔄 Barra de carga */
+#loading-container {
+  position: absolute;
+  bottom: 29%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 10;
+}
+
+#loading-bar {
+  width: 60vw;
+  max-width: 400px;
+  height: 12px;
+  background-color: #222;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+#progress {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #5e04f0, #f801a6);
+  transition: width 0.4s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 173, 51, 0.5);
+}
+
+
+#progress-text {
+  color: #dd2cdd;
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 0px 10px 10px rgba(125, 45, 230, 0.7);
+  animation: textGlow 2s ease-in-out infinite alternate;
+}
+
+/* 📝 Frases mágicas */
+#loading-text {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: textGlow 2s ease-in-out infinite alternate;
+  z-index: 10;
+  width: 80%;
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), 0 0 15px rgba(196, 0, 245, 0.6);
+  }
+}
+
+/* 🎯 Botón continuar */
+#continue-button {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ea4dff, #be00c4);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(190, 77, 255, 0.4);
+  transition: all 0.3s ease;
+  animation: buttonPulse 2s ease-in-out infinite;
+  z-index: 10;
+}
+
+#continue-button:hover {
+  transform: translateX(-50%) scale(1.3);
+  border-radius: 25px;
+  box-shadow: 0px 4px 20px rgba(190, 77, 255, 0.6);
+  background: linear-gradient(135deg, #ff6f91, #ff3d00);
+}
+
+
+@keyframes buttonPulse {
+  0%, 100% {
+    box-shadow: 0px 4px 15px rgba(255, 77, 77, 0.4);
+  }
+  50% {
+    box-shadow: 0px 4px 25px rgba(255, 77, 77, 0.8);
+  }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .dragon-iframe {
+    width: 95vw;
+    height: 50vh;
+  }
+  
+  .dragon-section {
+    transform: translate(-50%, -70%);
+  }
+  
+  #loading-text {
+    font-size: 1rem;
+    bottom: 20%;
+  }
+  
+  #loading-bar {
+    width: 80%;
+    bottom: 15%;
+  }
+  
+  #continue-button {
+    bottom: 8%;
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dragon-iframe {
+    height: 40vh;
+  }
+  
+  .dragon-section {
+    transform: translate(-50%, -75%);
+  }
+  
+  #loading-text {
+    font-size: 0.9rem;
+    bottom: 22%;
+  }
+  
+  #loading-bar {
+    width: 85%;
+    bottom: 17%;
+    height: 10px;
+  }
+  
+  #continue-button {
+    bottom: 10%;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* 🌟 Efectos adicionales */
+@keyframes backgroundShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+#preload::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.02) 50%,
+    transparent 70%
+  );
+  background-size: 200% 200%;
+  animation: backgroundShimmer 8s infinite;
+  pointer-events: none;
+}
+
+/* 🎭 Transiciones suaves */
+.fade-out {
+  animation: fadeOut 0.8s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

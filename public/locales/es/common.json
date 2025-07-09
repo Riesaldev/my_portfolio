@@ -1,0 +1,215 @@
+{
+  "welcome": {
+    "title": "Bienvenido a mi \"Mundo\"",
+    "subtitle": "Este es mi portafolio personal",
+    "description": "Soy un desarrollador web FullStack con pasión por crear sitios web hermosos y funcionales aunando diseño, tecnología, creatividad y por qué no... ¡Magia!",
+    "passion": "Apasionado por la innovación, la mejora continua y el aprendizaje, por el diseño y el modelado, por la experiencia del usuario y la accesibilidad. También me apasionan desde muy joven la literatura y el cine de fantasía y la ciencia ficción, al igual que los juegos de rol y las aventuras gráficas. Pero de lo que realmente soy un apasionado es de pasar tiempo de calidad con mi hermosa familia.",
+    "enjoy": "Espero que disfruten de esta experiencia tanto como a mí me ha encantado hacerla",
+    "portal": "¡¡¡Pasemos el umbral de la puerta de nuestro santuario juntos y exploremos <strong>La Sala de los Portales</strong>!!! Recuerda que podrás volver a ella usando la llave mágica de la parte superior"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "portfolio": "Portafolio",
+    "contact": "Contacto",
+    "farewell": "Despedida",
+    "menu": "Menú"
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "success": "Mensaje enviado correctamente",
+    "error": "Error al enviar el mensaje",
+    "required": "El {{field}} es requerido",
+    "minLength": "El {{field}} debe tener al menos {{min}} caracteres",
+    "maxLength": "El {{field}} no puede tener más de {{max}} caracteres",
+    "invalidEmail": "El formato del email no es válido",
+    "placeholder": {
+      "name": "Ingresa tu nombre completo",
+      "email": "tu@email.com",
+      "message": "Escribe tu mensaje aquí..."
+    },
+    "social": {
+      "title": "Sígueme en mis redes",
+      "description": "Conecta conmigo en mis redes sociales profesionales",
+      "visitProfile": "Visitar perfil de"
+    }
+  },
+  "validation": {
+    "name": {
+      "required": "El nombre es requerido",
+      "minLength": "El nombre debe tener al menos 2 caracteres",
+      "maxLength": "El nombre no puede tener más de 50 caracteres",
+      "invalid": "El nombre solo puede contener letras y espacios"
+    },
+    "email": {
+      "required": "El email es requerido",
+      "invalid": "Por favor ingresa un email válido",
+      "maxLength": "El email es demasiado largo"
+    },
+    "message": {
+      "required": "El mensaje es requerido",
+      "minLength": "El mensaje debe tener al menos 10 caracteres",
+      "maxLength": "El mensaje no puede tener más de 1000 caracteres"
+    }
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador web apasionado por la tecnología, el diseño y la narrativa interactiva."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "En este portfolio encontrarás una selección de mis proyectos"
+  },
+  "farewell": {
+    "title": "Agradecimientos",
+    "description": "Quiero expresar mi más sincero agradecimiento a todas las personas que me han apoyado en este viaje."
+  },
+  "language": {
+    "switch": "Cambiar idioma",
+    "spanish": "Español",
+    "english": "Inglés"
+  },
+  "video": {
+    "unsupported": "Tu navegador no soporta el elemento video.",
+    "skipIntro": "Clic para saltar la intro"
+  },
+  "portals": {
+    "main": {
+      "title": "Bienvenido a la sala de los portales!!",
+      "description": "Desde esta sala puedes acceder a diferentes portales y explorar nuevas dimensiones en busca de <strong>la Espada del Destino</strong> capaz de traer la paz al multiverso y felicidad a sus habitantes. Empezaremos nuestra aventura buscando informacion sobre la espada en los libros antiguos que se encuentran en el Laboratorio del Mago.",
+      "subtitle": "Pulsa en un portal para continuar tu aventura<br/> Sigamosle la pista a La Espada del Destino hasta el Lago de La Dama",
+      "portalText": "Portal al Lago de La Dama",
+      "portalSubtext": "(Portfolio)",
+      "href": "/portfolio"
+    },
+    "right": {
+      "title": "Portal del Bosque de las Hadas",
+      "description": "Seguimos las indicaciones de La Dama del Lago y cruzamos el portal hacia el Bosque Encantado de las Hadas con la esperanza de encontrar la Espada y así cumplir con nuestra misión. ¿Encontraremos la Espada del Destino en el Bosque Encantado?<br/>¿Querran ayudarnos la Hadas a encontrarla? ",
+      "subtitle": "(contacto)",
+      "portalText": "Portal al Bosque de las Hadas",
+      "portalSubtext": "(Contacto)",
+      "href": "/contact"
+    },
+    "left": {
+      "title": "Portal al Laboratorio",
+      "description": "Investiguemos en el laboratorio alguna pista sobre la ubicacion de La Espada del Destino. En el laboratorio del Mago, rodeados de frascos, pociones y objetos mágicos, descubrimos un pergamino antiguo que nos habla de la Espada del Destino y su conexión con La Dama del Lago.",
+      "subtitle": "(sobre mí)",
+      "portalText": "Portal al Laboratorio",
+      "portalSubtext": "(Sobre mí)",
+      "href": "/about"
+    }
+  },
+  "ancient": {
+    "openScroll": "Presiona Enter o haz clic para abrir el pergamino",
+    "closeScroll": "Presiona Enter o haz clic para cerrar el pergamino",
+    "previousPage": "Página anterior",
+    "nextPage": "Página siguiente",
+    "page": "Página {{current}} de {{total}}"
+  },
+  "preload": {
+    "title": "Cargando...",
+    "continue": "¡Continuar la aventura!",
+    "loading": "Cargando recursos mágicos...",
+    "phrases": [
+      "Invocando hechizos antiguos...",
+      "Abriendo portales dimensionales...",
+      "Despertando criaturas mágicas...",
+      "Cargando pergaminos sagrados...",
+      "Preparando la aventura..."
+    ]
+  },
+  "scrollContents": {
+    "about": {
+      "laboratory": {
+        "title": "El Laboratorio",
+        "content": "Tras incontables días de investigación, sumergido en cada libro a su alcance, el Mago por fin ha descubierto la manera de abrir un portal al mundo de los sueños, donde habita la misteriosa Dama del Lago.<br/> Con la ayuda de su fiel asistente, ha preparado todos los ingredientes necesarios para llevar a cabo el ritual.<br/> El laboratorio rebosa de frascos, pociones y artefactos mágicos, cada uno con una función específica dentro de este proceso arcano.<br/> En el aire se respira una mezcla de misterio y expectación mientras ambos se disponen a dar el siguiente paso en su viaje onírico, con la esperanza de encontrar la Espada del Destino y, con ella, la salvación de su mundo.<br/> Con la <strong>llave alada</strong> posicionada en la parte superior volveremos a la Sala de los Portales para continuar nuestro viaje."
+      },
+      "aboutMe": {
+        "title": "Sobre mí",
+        "content": "Soy un desarrollador web apasionado por la tecnología, el diseño y la narrativa interactiva.<br/> Mi vocación es crear experiencias únicas que no solo sean funcionales, sino también visualmente impactantes y emocionalmente significativas. <br/>Aunque mi experiencia laboral comenzó en 2004, fue en 2018 cuando inicié un camino de formación en modelado 3D, especializándome en herramientas como Blender, ZBrush y 3ds Max. Cursé estudios como Técnico Superior en Escultura, pero por giros inesperados de la vida, terminé dedicándome a la construcción como soldador y montador de estructuras metálicas. Sin embargo, esa etapa me llevó a replantear mi rumbo. Decidí dar un giro de 180 grados y reenfocar mi futuro en lo que realmente me apasiona: la tecnología y la creatividad.<br/> En 2024 me formé como desarrollador web fullstack a través de un bootcamp intensivo, complementando posteriormente mi aprendizaje con certificaciones en frameworks de JavaScript y CSS, TypeScript, y metodologías ágiles como Scrum entre otros.<br/> Hoy fusiono toda esa experiencia para construir proyectos que cuentan historias, despiertan emociones y dan vida a ideas.<br/> Aunque mi experiencia profesional en desarrollo web es reciente, mi pasión por la tecnología y el diseño es de larga data y suplo con mi dedicación, compromiso y creatividad lo que me falta en años de experiencia.<br/> También aporto mi experiencia previa en el ámbito de la construcción, la hostelería (12 años en puestos de responsabilidad en cocina y eventos; desde trabajar en el World Travel Market de Londres a ser jefe de sección en hoteles de 5 estrellas gran lujo o aprender de mano de estrellas Michelin y trabajar con ellos) e incluso en el Ejército Español, donde aprendí disciplina, trabajo en equipo y liderazgo. Todo ello me ha permitido desarrollar una mentalidad resiliente y una capacidad de adaptación y trabajo que considero esenciales en el mundo del desarrollo web."
+      }
+    },
+    "farewell": {
+      "thanks": {
+        "title": "Agradecimientos",
+        "content": "Quiero expresar mi más sincero agradecimiento a todas las personas que me han apoyado en este viaje.<br/><Gracias a mi familia por su amor incondicional y su paciencia. Por sacrificar su tiempo y recursos para ayudarme a alcanzar mis metas.<br/> A mis amigos, por estar siempre ahí y por sus palabras de aliento.<br/> Y a todos los mentores y profesores que compartieron su conocimiento y experiencia conmigo.<br/> De corazón, gracias a todos por ser parte de mi historia y por ayudarme a convertir mis sueños en realidad.<br/> ¡Espero que disfruten de mi trabajo!"
+      }
+    },
+    "contact": {
+      "forest": {
+        "title": "El Bosque de Las Hadas",
+        "content": "El Bosque de Las Hadas es un lugar de paz y armonía, donde la naturaleza y la magia coexisten en perfecta sintonía. Aquí, las criaturas mágicas viven en perfecta armonía, cuidando de su hogar y protegiendo los secretos que guarda. <br/>Es un lugar donde los sueños se hacen realidad y las leyendas cobran vida. En lo más profundo del bosque, donde la luz apenas penetra, se encuentra un lugar mágico donde las hadas danzan y juegan entre los árboles.<br/> Este es un mundo de ensueño, lleno de colores vibrantes y sonidos melodiosos.<br/> En este lugar, en el que tiempo parece detenerse y la realidad se mezcla con la fantasía existe un claro bañado por el sol donde, finalmente, nuestro héroes encuentran la Espada del Destino y con ella la clave para salvar a todos los seres del multiverso.<br/> FIN."
+      },
+      "contactForm": {
+        "title": "Contacto",
+        "content": "Si deseas ponerte en contacto conmigo, puedes hacerlo a través del siguiente formulario: <p class='mt-4'>¡Espero que disfrutes de mi trabajo!</p><p class='mt-4 text-fuchsia-600 underline'><a href='/farewell'>Agradecimientos</a></p>"
+      }
+    },
+    "portfolio": {
+      "lake": {
+        "title": "El Lago de La Dama",
+        "content": "Varios días de búsqueda en el plano onírico han llevado al Mago y su asistente a encontrar un lago de aguas cristalinas, rodeado de montañas y donde la Dama del Lago les espera.<br/> El aire está impregnado de magia y misterio, y el sonido del agua fluyendo crea una melodía hipnótica y la Dama del Lago aparece ante ellos, sonriendo.<br/> Su presencia irradia calma y poder y está conformada por la misma esencia del lago. Con un gesto suave, la Dama del Lago les invita a acercarse, y el Mago siente que ha llegado el momento de revelar su propósito: encontrar la Espada del Destino.<br/> La Dama del Lago asiente, comprendiendo la importancia de su misión y les revela la <strong>ubicación de La Espada</strong>.<br/> Son las Hadas, en su plano, quienes protegen y guardan La Espada del Destino. Están cada vez más cerca."
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "content": "En este portfolio encontrarás una selección de mis proyectos, terminados o en proceso, originales o clones de web conocidas que he realizado como parte de mi formación y desarrollo profesional.<br/> Cada proyecto refleja mi pasión por la tecnología y el diseño, y han sido creados utilizando las últimas tecnologías web, incluyendo HTML, CSS, JavaScript, TypeScript y frameworks modernos como React, Angular, Vue o Next.<br/> También he incorporado algunos proyectos de modelado 3D y de diseño en Figma, que muestran mi versatilidad y creatividad en diferentes áreas del diseño digital. Todos ellos están incluidos en mi página de <a style='color: #6366F1; text-decoration: underline;' href='https://github.com/Riesaldev/Proyectos'><strong>GitHub</strong></a>.<br/> Espero que disfrutes explorando mi trabajo tanto como yo disfruté creándolo. Si tienes alguna pregunta o comentario, no dudes en contactarme."
+      },
+      "netflix": {
+        "title": "Portfolio Web",
+        "content": "** Clon de Netflix **<br/>Este proyecto es un clon de la popular plataforma de streaming Netflix, creado como parte de mi formación en desarrollo web. Utiliza tecnologías modernas como React y Tailwind CSS para ofrecer una experiencia de usuario fluida y atractiva.<br/> El clon incluye funcionalidades como login de usuario y registro, personalización de perfil, y una interfaz intuitiva que permite navegar por una amplia selección de películas y series.<br/> Este proyecto me ha permitido profundizar en el desarrollo de aplicaciones web complejas y en la implementación de diseños responsivos y atractivos.<br/> Aún no he terminado de pulir todos los detalles, pero estoy satisfecho con el resultado hasta ahora."
+      },
+      "blurry": {
+        "title": "Portfolio Web",
+        "content": "** Blurry **<br/> Este es un proyecto es una idea original que estoy desarrollando, se trata de una aplicación de citas basada en un famoso formato televisivo donde los participantes intentan conocer a su pareja, sin verse físicamente.<br/> La aplicación utiliza tecnologías modernas como React y Tailwind CSS para ofrecer una experiencia de usuario fluida y atractiva. Incluirá funcionalidades como chat en tiempo real y perfiles de usuario personalizados, uso de tokens como moneda interna y herramientas modernas para facilitar la conexión entre personas.<br/> Este proyecto me ha permitido explorar nuevas ideas y enfoques en el desarrollo de aplicaciones web, y estoy emocionado por seguir trabajando en él."
+      },
+      "hackFlight": {
+        "title": "Portfolio Web",
+        "content": "** Hack a Flight **<br/> Proyecto fin de Bootcamp realizado en grupo con el objetivo de crear una aplicación web para la búsqueda de vuelos. La aplicación utiliza tecnologías modernas como React y Tailwind CSS para ofrecer una experiencia de usuario fluida y atractiva.<br/> Incluye funcionalidades como búsqueda de vuelos, filtrado por fechas y precios, y un sistema de guardado de vuelos favoritos al igual que rating de vuelos.<br/> Este proyecto me ha permitido trabajar en equipo y aplicar mis conocimientos en desarrollo web de manera práctica utilizando herramientas como Git y GitHub para la gestión del código y la colaboración y metodologías Ágiles como Scrum, lo que ha mejorado significativamente mi capacidad para trabajar en proyectos colaborativos. Además, he aprendido a integrar APIs externas (como la API de Amadeus) y a manejar datos en tiempo real, lo que ha sido un gran desafío y una valiosa experiencia de aprendizaje. También cuento con una versión en proceso que incluye mejoras en la interfaz de usuario y nuevas funcionalidades ya a nivel personal.<br/> Estoy emocionado por seguir trabajando en este proyecto y llevarlo al siguiente nivel."
+      },
+      "gta": {
+        "title": "Portfolio Web",
+        "content": "** GTA VI **<br/> Este es un proyecto en el que estoy trabajando actualmente, se trata de un clon de la web oficial de GTA VI.<br/> El objetivo es recrear la estética y funcionalidad de la web oficial, utilizando tecnologías modernas como React y Tailwind CSS para ofrecer una experiencia de usuario fluida y atractiva.<br/> El clon es uno de los tutoriales de Midudev, un reconocido youtuber español especializado en desarrollo web, y me ha permitido aprender mucho sobre la creación de interfaces de usuario atractivas y funcionales.<br/> Este proyecto me ha permitido profundizar en el desarrollo de aplicaciones web complejas y en la implementación de diseños responsivos y atractivos.<br/> Aún no he terminado de pulir todos los detalles, pero estoy satisfecho con el resultado hasta ahora."
+      },
+      "ticket": {
+        "title": "Portfolio Web",
+        "content": "** Conference Ticket Generator **<br/> Una aplicación web que permite a los usuarios generar entradas para conferencias de manera fácil y rápida.<br/> Se basa en un formulario simple donde los usuarios ingresan sus datos y reciben una entrada. Este es uno de los proyectos realizados a través de la plataforma Frontend Mentor y solo incluye, por el momento, la parte visual.<br/> Tengo la intención de agregar más funcionalidades en el futuro, como la integración con pasarelas de pago y la generación de entradas en formato PDF y hacer de lo que era un desafío de frontend un proyecto completo.<br/> Este proyecto me ha permitido mejorar mis habilidades en el desarrollo de formularios y la validación de datos, así como en la creación de interfaces de usuario atractivas y funcionales.<br/> Motivado con la idea de llevarlo al siguiente nivel."
+      },
+      "ichiban": {
+        "title": "Portfolio design",
+        "content": "** ICHIBAN **<br/> Este es un proyecto de diseño el cual, a través de múltiples imágenes, generamos una experiencia visual del movimiento de una moto.<br/> El objetivo es crear un video controlado por scroll, donde cada imagen se muestra en un momento específico del desplazamiento del usuario, creando una sensación de movimiento fluido y dinámico.<br/> El proyecto pertenece a los tutoriales de Midudev, un reconocido youtuber español especializado en desarrollo web, y me ha permitido aprender mucho sobre la creación de experiencias visuales y dinámicas en la web.<br/> Me parece un proyecto muy interesante y divertido a la par que atractivo."
+      },
+      "lionKing": {
+        "title": "Portfolio design",
+        "content": "** Lion King **<br/> Pequeño proyecto de diseño en Figma, inspirado en el clásico de Disney, El Rey León.<br/> El objetivo es crear una interfaz de usuario atractiva y funcional, utilizando colores y elementos visuales que evocan la esencia de la película.<br/> Este proyecto me ha permitido mejorar mis habilidades en el diseño de interfaces y la creación de experiencias visuales atractivas.<br/> Aunque es un proyecto más pequeño en comparación con otros, ha sido una excelente oportunidad para experimentar con el diseño y la creatividad dentro de Figma.<br/> Me parece un proyecto muy interesante y divertido a la par que atractivo, también tengo algunos ejemplo más en Figma como algún formulario de registro y login, o un diseño de Parallax."
+      },
+      "motionFx": {
+        "title": "Portfolio design",
+        "content": "** Motion FX **<br/> Este proyecto hace referencia a un addon de Blender que permite crear efectos de movimiento y animaciones de manera sencilla y rápida.<br/> El objetivo es practicar con Python y Blender, creando un addon aunque aún no he conseguido que funcione correctamente, pero es un proyecto en el que estoy trabajando y aprendiendo mucho sobre la creación de addons y la programación en Python.<br/> Este proyecto me ha permitido mejorar mis habilidades en la programación y la creación de addons para Blender, así como en la creación de efectos visuales y animaciones.<br/> Aunque es un proyecto más técnico, ha sido una excelente oportunidad para experimentar con la programación y la creatividad dentro de Blender.<br/> Me parece un proyecto muy interesante y divertido a la par que atractivo, y estoy emocionado por seguir trabajando en él y llevarlo a cotas más altas."
+      },
+      "blender": {
+        "title": "Portfolio design",
+        "content": "** 3D Model **<br/> Con respecto a mis proyectos de modelado 3D, he trabajado en una variedad de modelos utilizando herramientas como Blender, ZBrush y 3ds Max.<br/> Estos proyectos incluyen desde modelos de personajes y criaturas hasta entornos y objetos, cada uno con su propio estilo y técnica de modelado. Una prueba de ello son los propios renders utilizados en este portfolio web.<br/> El modelado 3D es una de mis pasiones y me encanta explorar nuevas técnicas y estilos para crear modelos, animaciones únicas y detalladas.<br/> Aunque no tengo un portfolio web específico para mis proyectos de modelado 3D, estoy trabajando en crear uno que muestre mi trabajo y habilidades en esta área."
+      }
+    }
+  },
+  "audio": {
+    "show": "Mostrar reproductor",
+    "hide": "Ocultar reproductor",
+    "unknown": "Desconocido",
+    "shuffle": "Reproducción aleatoria",
+    "repeat": "Repetir",
+    "volume": "Volumen",
+    "track": "Pista",
+    "playing": "Reproducir",
+    "paused": "Pausar",
+    "mute": "Silenciar",
+    "unmute": "Activar sonido",
+    "next": "Siguiente pista",
+    "clickToPlay": "Haz clic para reproducir música"
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "welcome": {
+    "title": "Welcome to my \"World\"",
+    "subtitle": "This is my personal portfolio",
+    "description": "I'm a FullStack web developer with a passion for creating beautiful and functional websites combining design, technology, creativity and why not... Magic!",
+    "passion": "Passionate about innovation, continuous improvement and learning, about design and modeling, about user experience and accessibility. I've also been passionate since a very young age about fantasy and science fiction literature and cinema, as well as role-playing games and graphic adventures. But what I'm really passionate about is spending quality time with my beautiful family.",
+    "enjoy": "I hope you enjoy this experience as much as I loved creating it",
+    "portal": "Let's cross the threshold of our sanctuary's door together and explore <strong>The Portal Room</strong>!!! Remember that you can return to it using the magic key at the top"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "farewell": "Farewell",
+    "menu": "Menu"
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully",
+    "error": "Error sending message",
+    "required": "{{field}} is required",
+    "minLength": "{{field}} must have at least {{min}} characters",
+    "maxLength": "{{field}} cannot have more than {{max}} characters",
+    "invalidEmail": "Email format is not valid",
+    "placeholder": {
+      "name": "Enter your full name",
+      "email": "your@email.com",
+      "message": "Write your message here..."
+    },
+    "social": {
+      "title": "Follow me on my networks",
+      "description": "Connect with me on my professional social networks",
+      "visitProfile": "Visit profile of"
+    }
+  },
+  "validation": {
+    "name": {
+      "required": "Name is required",
+      "minLength": "Name must have at least 2 characters",
+      "maxLength": "Name cannot have more than 50 characters",
+      "invalid": "Name can only contain letters and spaces"
+    },
+    "email": {
+      "required": "Email is required",
+      "invalid": "Please enter a valid email",
+      "maxLength": "Email is too long"
+    },
+    "message": {
+      "required": "Message is required",
+      "minLength": "Message must have at least 10 characters",
+      "maxLength": "Message cannot have more than 1000 characters"
+    }
+  },
+  "about": {
+    "title": "About me",
+    "description": "I'm a web developer passionate about technology, design and interactive storytelling."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "In this portfolio you will find a selection of my projects"
+  },
+  "farewell": {
+    "title": "Acknowledgments",
+    "description": "I want to express my most sincere gratitude to all the people who have supported me on this journey."
+  },
+  "language": {
+    "switch": "Switch language",
+    "spanish": "Spanish",
+    "english": "English"
+  },
+  "video": {
+    "unsupported": "Your browser does not support the video element.",
+    "skipIntro": "Click to skip intro"
+  },
+  "portals": {
+    "main": {
+      "title": "Welcome to the portal room!!",
+      "description": "From this room you can access different portals and explore new dimensions in search of <strong>the Sword of Destiny</strong> capable of bringing peace to the multiverse and happiness to its inhabitants. We will begin our adventure searching for information about the sword in the ancient books found in the Wizard's Laboratory.",
+      "subtitle": "Click on a portal to continue your adventure<br/> Let's follow the trail of The Sword of Destiny to the Lake of The Lady",
+      "portalText": "Portal to the Lake of The Lady",
+      "portalSubtext": "(Portfolio)",
+      "href": "/portfolio"
+    },
+    "right": {
+      "title": "Portal of the Fairy Forest",
+      "description": "We follow The Lady of the Lake's directions and cross the portal towards the Enchanted Fairy Forest hoping to find the Sword and thus fulfill our mission. Will we find the Sword of Destiny in the Enchanted Forest?<br/>Will the Fairies want to help us find it?",
+      "subtitle": "(contact)",
+      "portalText": "Portal to the Fairy Forest",
+      "portalSubtext": "(Contact)",
+      "href": "/contact"
+    },
+    "left": {
+      "title": "Portal to the Laboratory",
+      "description": "Let's investigate in the laboratory for some clue about the location of The Sword of Destiny. In the Wizard's laboratory, surrounded by jars, potions and magical objects, we discover an ancient scroll that tells us about the Sword of Destiny and its connection with The Lady of the Lake.",
+      "subtitle": "(about me)",
+      "portalText": "Portal to the Laboratory",
+      "portalSubtext": "(About me)",
+      "href": "/about"
+    }
+  },
+  "ancient": {
+    "openScroll": "Press Enter or click to open the scroll",
+    "closeScroll": "Press Enter or click to close the scroll",
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "page": "Page {{current}} of {{total}}"
+  },
+  "preload": {
+    "title": "Loading...",
+    "continue": "Continue the adventure!",
+    "loading": "Loading magical resources...",
+    "phrases": [
+      "Invoking ancient spells...",
+      "Opening dimensional portals...",
+      "Awakening magical creatures...",
+      "Loading sacred scrolls...",
+      "Preparing the adventure..."
+    ]
+  },
+  "scrollContents": {
+    "about": {
+      "laboratory": {
+        "title": "The Laboratory",
+        "content": "After countless days of research, immersed in every book within reach, the Wizard has finally discovered how to open a portal to the dream world, where the mysterious Lady of the Lake dwells.<br/> With the help of his faithful assistant, he has prepared all the necessary ingredients to carry out the ritual.<br/> The laboratory overflows with jars, potions and magical artifacts, each with a specific function within this arcane process.<br/> The air breathes a mixture of mystery and expectation while both prepare to take the next step in their oneiric journey, hoping to find the Sword of Destiny and, with it, the salvation of their world.<br/> With the <strong>winged key</strong> positioned at the top we will return to the Portal Room to continue our journey."
+      },
+      "aboutMe": {
+        "title": "About me",
+        "content": "I'm a web developer passionate about technology, design and interactive storytelling.<br/> My vocation is to create unique experiences that are not only functional, but also visually impactful and emotionally meaningful. <br/>Although my work experience began in 2004, it was in 2018 when I started a training path in 3D modeling, specializing in tools like Blender, ZBrush and 3ds Max. I studied as a Higher Technician in Sculpture, but due to unexpected turns in life, I ended up dedicating myself to construction as a welder and metal structure assembler. However, that stage led me to rethink my path. I decided to make a 180-degree turn and refocus my future on what I'm really passionate about: technology and creativity.<br/> In 2024 I trained as a fullstack web developer through an intensive bootcamp, subsequently complementing my learning with certifications in JavaScript and CSS frameworks, TypeScript, and agile methodologies like Scrum among others.<br/> Today I merge all that experience to build projects that tell stories, awaken emotions and bring ideas to life.<br/> Although my professional experience in web development is recent, my passion for technology and design is long-standing and I supplement what I lack in years of experience with my dedication, commitment and creativity.<br/> I also bring my previous experience in the field of construction, hospitality (12 years in responsible positions in kitchen and events; from working at the World Travel Market in London to being section chief in 5-star grand luxury hotels or learning from Michelin stars and working with them) and even in the Spanish Army, where I learned discipline, teamwork and leadership. All of this has allowed me to develop a resilient mindset and an adaptability and work capacity that I consider essential in the world of web development."
+      }
+    },
+    "farewell": {
+      "thanks": {
+        "title": "Acknowledgments",
+        "content": "I want to express my most sincere gratitude to all the people who have supported me on this journey.<br/>Thanks to my family for their unconditional love and patience. For sacrificing their time and resources to help me reach my goals.<br/> To my friends, for always being there and for their words of encouragement.<br/> And to all the mentors and teachers who shared their knowledge and experience with me.<br/> From the heart, thank you all for being part of my story and for helping me turn my dreams into reality.<br/> I hope you enjoy my work!"
+      }
+    },
+    "contact": {
+      "forest": {
+        "title": "The Fairy Forest",
+        "content": "The Fairy Forest is a place of peace and harmony, where nature and magic coexist in perfect harmony. Here, magical creatures live in perfect harmony, caring for their home and protecting the secrets it holds. <br/>It's a place where dreams come true and legends come to life. In the deepest part of the forest, where light barely penetrates, there is a magical place where fairies dance and play among the trees.<br/> This is a dream world, full of vibrant colors and melodious sounds.<br/> In this place, where time seems to stop and reality mixes with fantasy, there exists a sun-bathed clearing where, finally, our heroes find the Sword of Destiny and with it the key to save all beings in the multiverse.<br/> THE END."
+      },
+      "contactForm": {
+        "title": "Contact",
+        "content": "If you want to get in touch with me, you can do so through the following form: <p class='mt-4'>I hope you enjoy my work!</p><p class='mt-4 text-fuchsia-600 underline'><a href='/farewell'>Acknowledgments</a></p>"
+      }
+    },
+    "portfolio": {
+      "lake": {
+        "title": "The Lake of The Lady",
+        "content": "Several days of searching in the oneiric plane have led the Wizard and his assistant to find a lake of crystalline waters, surrounded by mountains and where the Lady of the Lake awaits them.<br/> The air is imbued with magic and mystery, and the sound of flowing water creates a hypnotic melody and the Lady of the Lake appears before them, smiling.<br/> Her presence radiates calm and power and is made up of the same essence of the lake. With a gentle gesture, the Lady of the Lake invites them to approach, and the Wizard feels that the moment has come to reveal his purpose: to find the Sword of Destiny.<br/> The Lady of the Lake nods, understanding the importance of their mission and reveals to them the <strong>location of The Sword</strong>.<br/> It's the Fairies, in their plane, who protect and guard the Sword of Destiny. They are getting closer and closer."
+      },
+      "portfolio": {
+        "title": "Portfolio",
+        "content": "In this portfolio you will find a selection of my projects, finished or in progress, original or clones of known websites that I have made as part of my training and professional development.<br/> Each project reflects my passion for technology and design, and they have been created using the latest web technologies, including HTML, CSS, JavaScript, TypeScript and modern frameworks like React, Angular, Vue or Next.<br/> I have also incorporated some 3D modeling and Figma design projects, which show my versatility and creativity in different areas of digital design. All of them are included in my <a style='color: #6366F1; text-decoration: underline;' href='https://github.com/Riesaldev/Proyectos'><strong>GitHub</strong></a> page.<br/> I hope you enjoy exploring my work as much as I enjoyed creating it. If you have any questions or comments, feel free to contact me."
+      },
+      "netflix": {
+        "title": "Web Portfolio",
+        "content": "** Netflix Clone **<br/>This project is a clone of the popular Netflix streaming platform, created as part of my web development training. It uses modern technologies like React and Tailwind CSS to offer a smooth and attractive user experience.<br/> The clone includes functionalities like user login and registration, profile customization, and an intuitive interface that allows browsing through a wide selection of movies and series.<br/> This project has allowed me to delve deeper into the development of complex web applications and the implementation of responsive and attractive designs.<br/> I haven't finished polishing all the details yet, but I'm satisfied with the result so far."
+      },
+      "blurry": {
+        "title": "Web Portfolio",
+        "content": "** Blurry **<br/> This is an original idea project that I'm developing, it's a dating application based on a famous television format where participants try to meet their partner, without seeing each other physically.<br/> The application uses modern technologies like React and Tailwind CSS to offer a smooth and attractive user experience. It will include functionalities like real-time chat and personalized user profiles, use of tokens as internal currency and modern tools to facilitate connection between people.<br/> This project has allowed me to explore new ideas and approaches in web application development, and I'm excited to continue working on it."
+      },
+      "hackFlight": {
+        "title": "Web Portfolio",
+        "content": "** Hack a Flight **<br/> Bootcamp final project carried out in a group with the objective of creating a web application for flight search. The application uses modern technologies like React and Tailwind CSS to offer a smooth and attractive user experience.<br/> It includes functionalities like flight search, filtering by dates and prices, and a system for saving favorite flights as well as flight rating.<br/> This project has allowed me to work as a team and apply my knowledge in web development in a practical way using tools like Git and GitHub for code management and collaboration and Agile methodologies like Scrum, which has significantly improved my ability to work on collaborative projects. Additionally, I have learned to integrate external APIs (like the Amadeus API) and handle real-time data, which has been a great challenge and a valuable learning experience. I also have a version in progress that includes improvements in the user interface and new functionalities at a personal level.<br/> I'm excited to continue working on this project and take it to the next level."
+      },
+      "gta": {
+        "title": "Web Portfolio",
+        "content": "** GTA VI **<br/> This is a project I'm currently working on, it's a clone of the official GTA VI website.<br/> The objective is to recreate the aesthetics and functionality of the official website, using modern technologies like React and Tailwind CSS to offer a smooth and attractive user experience.<br/> The clone is one of Midudev's tutorials, a renowned Spanish youtuber specialized in web development, and it has allowed me to learn a lot about creating attractive and functional user interfaces.<br/> This project has allowed me to delve deeper into the development of complex web applications and the implementation of responsive and attractive designs.<br/> I haven't finished polishing all the details yet, but I'm satisfied with the result so far."
+      },
+      "ticket": {
+        "title": "Web Portfolio",
+        "content": "** Conference Ticket Generator **<br/> A web application that allows users to generate conference tickets easily and quickly.<br/> It's based on a simple form where users enter their data and receive a ticket. This is one of the projects made through the Frontend Mentor platform and only includes, for the moment, the visual part.<br/> I intend to add more functionalities in the future, such as integration with payment gateways and ticket generation in PDF format and make what was a frontend challenge a complete project.<br/> This project has allowed me to improve my skills in form development and data validation, as well as in creating attractive and functional user interfaces.<br/> Motivated with the idea of taking it to the next level."
+      },
+      "ichiban": {
+        "title": "Portfolio design",
+        "content": "** ICHIBAN **<br/> This is a design project which, through multiple images, generates a visual experience of a motorcycle's movement.<br/> The objective is to create a scroll-controlled video, where each image is shown at a specific moment of the user's scrolling, creating a sensation of fluid and dynamic movement.<br/> The project belongs to Midudev's tutorials, a renowned Spanish youtuber specialized in web development, and it has allowed me to learn a lot about creating visual and dynamic experiences on the web.<br/> I find it a very interesting and fun project as well as attractive."
+      },
+      "lionKing": {
+        "title": "Portfolio design",
+        "content": "** Lion King **<br/> Small design project in Figma, inspired by the Disney classic, The Lion King.<br/> The objective is to create an attractive and functional user interface, using colors and visual elements that evoke the essence of the movie.<br/> This project has allowed me to improve my skills in interface design and creating attractive visual experiences.<br/> Although it's a smaller project compared to others, it has been an excellent opportunity to experiment with design and creativity within Figma.<br/> I find it a very interesting and fun project as well as attractive, I also have some more examples in Figma like some registration and login forms, or a Parallax design."
+      },
+      "motionFx": {
+        "title": "Portfolio design",
+        "content": "** Motion FX **<br/> This project refers to a Blender addon that allows creating motion effects and animations easily and quickly.<br/> The objective is to practice with Python and Blender, creating an addon although I haven't managed to make it work correctly yet, but it's a project I'm working on and learning a lot about addon creation and Python programming.<br/> This project has allowed me to improve my skills in programming and creating addons for Blender, as well as in creating visual effects and animations.<br/> Although it's a more technical project, it has been an excellent opportunity to experiment with programming and creativity within Blender.<br/> I find it a very interesting and fun project as well as attractive, and I'm excited to continue working on it and take it to higher levels."
+      },
+      "blender": {
+        "title": "Portfolio design",
+        "content": "** 3D Model **<br/> Regarding my 3D modeling projects, I have worked on a variety of models using tools like Blender, ZBrush and 3ds Max.<br/> These projects include everything from character and creature models to environments and objects, each with its own style and modeling technique. Proof of this are the renders themselves used in this web portfolio.<br/> 3D modeling is one of my passions and I love exploring new techniques and styles to create unique and detailed models and animations.<br/> Although I don't have a specific web portfolio for my 3D modeling projects, I'm working on creating one that showcases my work and skills in this area."
+      }
+    }
+  },
+  "audio": {
+    "show": "Show player",
+    "hide": "Hide player",
+    "unknown": "Unknown",
+    "shuffle": "Shuffle play",
+    "repeat": "Repeat",
+    "volume": "Volume",
+    "track": "Track",
+    "playing": "Play",
+    "paused": "Pause",
+    "mute": "Mute",
+    "unmute": "Unmute",
+    "next": "Next track",
+    "clickToPlay": "Click to play music"
+  }
+}

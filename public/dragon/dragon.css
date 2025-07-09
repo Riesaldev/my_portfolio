@@ -1,0 +1,210 @@
+:root {
+  --bg-primary: #1d0052;
+  --shadow-color: rgba(196, 0, 245, 0.533);
+  --shadow-blur: 2em;
+  --shadow-offset: 0.2em;
+  --animation-duration: 3s;
+  --float-distance: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow: hidden;
+}
+
+/* Canvas principal con efectos modernos */
+canvas {
+  box-shadow: var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-color);
+
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+/* Indicador de carga moderno */
+.loading-container {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #ba926a, #c4a373);
+  border-radius: 0.75rem;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.loading-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading-container.fade-out {
+  opacity: 0;
+}
+
+.loading-text {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 600;
+  color: #2a0244;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+}
+
+.loading-spinner {
+  width: 150px;
+  height: 150px;
+  border: 10px solid rgba(52, 24, 65, 0.2);
+  border-top: 10px solid #200252;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Efectos de partículas CSS para complementar la animación */
+.particle-system {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent);
+  border-radius: 50%;
+  animation: float-particle 8s infinite linear;
+}
+
+.particle:nth-child(odd) {
+  animation-delay: -2s;
+  background: radial-gradient(circle, rgba(196, 0, 245, 0.6), transparent);
+}
+
+.particle:nth-child(3n) {
+  animation-delay: -4s;
+  animation-duration: 12s;
+}
+
+/* Gradientes dinámicos para temas */
+.theme-red {
+  background: linear-gradient(135deg, rgba(128, 14, 14, 0.1), rgba(107, 8, 8, 0.1));
+}
+
+.theme-green {
+  background: linear-gradient(135deg, rgba(33, 82, 16, 0.1), rgba(39, 77, 10, 0.1));
+}
+
+.theme-blue {
+  background: linear-gradient(135deg, rgba(25, 45, 128, 0.1), rgba(20, 35, 107, 0.1));
+}
+
+.theme-purple {
+  background: linear-gradient(135deg, rgba(88, 25, 128, 0.1), rgba(67, 20, 107, 0.1));
+}
+
+.theme-gold {
+  background: linear-gradient(135deg, rgba(184, 134, 11, 0.1), rgba(153, 111, 8, 0.1));
+}
+
+.theme-black {
+  background: linear-gradient(135deg, rgba(31, 29, 31, 0.1), rgba(60, 71, 51, 0.1));
+}
+
+/* Animaciones CSS modernas */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float-particle {
+  0% {
+    transform: translateX(100px) translateY(-100vh) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(50px) translateY(-90vh) scale(1);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-100vw) translateY(10vh) scale(1);
+  }
+  100% {
+    transform: translateX(-110vw) translateY(20vh) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: var(--shadow-offset) var(--shadow-offset) var(--shadow-blur) var(--shadow-color);
+  }
+  50% { 
+    box-shadow: 
+      var(--shadow-offset) var(--shadow-offset) calc(var(--shadow-blur) * 1.5) var(--shadow-color),
+      0 0 20px rgba(196, 0, 245, 0.3);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Efectos de resplandor para el canvas */
+.canvas-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+/* Fondo animado */
+body::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: 
+    linear-gradient(45deg, transparent 30%, rgba(196, 0, 245, 0.1) 50%, transparent 70%),
+    linear-gradient(-45deg, transparent 30%, rgba(138, 43, 226, 0.1) 50%, transparent 70%);
+  background-size: 200% 200%;
+  animation: background-shift 20s ease infinite;
+  z-index: -1;
+}
+
+/* Contenedor principal para efectos */
+.canvas-container {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+/* Responsive design moderno */
+@media (max-width: 768px) {
+  canvas {
+    max-width: 95vw;
+    max-height: 60vh;
+  }
+  
+  .loading-text {
+    font-size: 1.5rem;
+  }
+  
+  .loading-spinner {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

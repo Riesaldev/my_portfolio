@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Animation - Portfolio</title>
+    <link rel="stylesheet" href="dragon.css">
+</head>
+<body>
+    <main class="canvas-container">
+        <div class="particle-system" id="particles"></div>
+        <canvas id="canvas"></canvas>
+        <div class="loading-container" id="loadingContainer">
+            <div class="loading-text">CARGANDO</div>
+            <div class="loading-spinner"></div>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+    <script src="dragon.js"></script>
+    
+    <!-- Script para comunicarse con el parent -->
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                // Notificar al parent que la animación está lista
+                if (window.parent) {
+                    window.parent.postMessage({ type: 'dragonLoaded' }, '*');
+                }
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
