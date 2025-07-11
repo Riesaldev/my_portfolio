@@ -30,13 +30,13 @@ const MobileMenu = () => {
       </button>
       {menuOpen && (
         <div className="absolute right-0 mt-2 w-48 bg-[#8e3796] rounded-md shadow-lg py-1 z-50 text-[#fddbff] text-xl">
-          <Link href="#about" className="block px-4 py-2  hover:text-gray-100 hover:underline" onClick={toggleMenu}>
+          <Link href="/about" className="block px-4 py-2  hover:text-gray-100 hover:underline" onClick={toggleMenu}>
             {t('navigation.about')}
           </Link>
-          <Link href="#projects" className="block px-4 py-2  hover:text-gray-100 hover:underline" onClick={toggleMenu}>
+          <Link href="/portfolio" className="block px-4 py-2  hover:text-gray-100 hover:underline" onClick={toggleMenu}>
             {t('navigation.portfolio')}
           </Link>
-          <Link href="#contact" className="block px-4 py-2  hover:text-gray-100 hover:underline" onClick={toggleMenu}>
+          <Link href="/contact" className="block px-4 py-2  hover:text-gray-100 hover:underline" onClick={toggleMenu}>
             {t('navigation.contact')}
           </Link>
           
