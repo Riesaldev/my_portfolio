@@ -7,7 +7,7 @@ export default function SocialLinks() {
   const socialLinks = [
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/ricardo-estupi%C3%B1%C3%A1n-alonso-53bb19290/',
+      url: 'https://www.linkedin.com/in/ricardo-estupinan/',
       icon: (
         <svg
           className="w-10 h-10"
